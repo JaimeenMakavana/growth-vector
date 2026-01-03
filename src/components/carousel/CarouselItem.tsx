@@ -109,8 +109,16 @@ const iconMap: Record<string, JSX.Element> = {
   ),
 };
 
+const colorMap: Record<string, string> = {
+  "gray-900": "hover:text-gray-900",
+  "blue-500": "hover:text-blue-500",
+  "blue-600": "hover:text-blue-600",
+  "orange-500": "hover:text-orange-500",
+  "green-500": "hover:text-green-500",
+};
+
 export default function CarouselItem({ name, icon, color }: CarouselItemProps) {
-  const hoverColorClass = `hover:text-${color}`;
+  const hoverColorClass = colorMap[color] || "hover:text-gray-900";
   
   return (
     <div className={`flex items-center gap-3 text-gray-400 ${hoverColorClass} transition-colors duration-300`}>
