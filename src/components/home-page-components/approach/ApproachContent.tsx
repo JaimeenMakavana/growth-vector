@@ -8,10 +8,9 @@ export default function ApproachContent() {
       </h2>
       <div className="space-y-2xl text-xl text-gray-600 font-light leading-relaxed">
         <p className="font-montserrat font-medium hover:text-gray-900 transition-colors duration-base">
-          We are{" "}
-          <span className="text-gray-900 font-bold">Growth Vector</span>,
-          your strategic partner for exponential growth. We don&apos;t
-          just execute campaigns; we build{" "}
+          We are <span className="text-gray-900 font-bold">Growth Vector</span>,
+          your strategic partner for exponential growth. We don&apos;t just
+          execute campaigns; we build{" "}
           <span className="text-gray-900 border-b-2 border-rose-200 hover:border-rose-500 transition-colors duration-base font-montserrat font-medium">
             Growth Systems
           </span>
@@ -28,7 +27,10 @@ export default function ApproachContent() {
       </div>
       <button className="group mt-3xl bg-background border border-gray-200 text-gray-900 px-xl py-lg rounded-full text-base hover:border-rose-600 hover:text-rose-600 transition-all duration-base flex items-center gap-sm font-montserrat font-medium shadow-sm hover:shadow-lg">
         Meet the Team
-        <Users className="w-4 h-4 group-hover:scale-125 transition-transform" strokeWidth={2} />
+        <Users
+          className="w-4 h-4 group-hover:scale-125 transition-transform"
+          strokeWidth={2}
+        />
       </button>
     </div>
   );
