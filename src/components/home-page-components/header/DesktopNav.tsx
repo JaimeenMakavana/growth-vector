@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const navigationItems = [
-  { href: "#services", label: "Services" },
-  { href: "#work", label: "Case Studies" },
-  { href: "#about", label: "Agency" },
+  { href: "/services", label: "Services" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/about", label: "About" },
 ];
 
 const linkClassName = "hover:text-rose-600 transition-colors";
