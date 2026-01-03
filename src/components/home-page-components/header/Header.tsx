@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, TrendingUp } from "lucide-react";
 import DesktopNav from "./DesktopNav";
 import MobileMenu from "./MobileMenu";
 
@@ -20,6 +20,10 @@ export default function Header() {
           href="/"
           className="group flex items-center text-sm text-gray-900 hover:text-rose-600 transition-colors gap-sm duration-base"
         >
+          <TrendingUp
+            className="w-5 h-5 text-rose-600 group-hover:text-rose-700 transition-colors shrink-0"
+            strokeWidth={2}
+          />
           <span className="font-instrument text-2xl tracking-tight font-serif italic font-medium hidden md:block">
             Growth Vector.
           </span>
