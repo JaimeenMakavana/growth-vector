@@ -2,11 +2,14 @@ import { Mail } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <div id="contact" className="py-4xl text-center mx-auto">
-      <h2 className="text-3xl mb-xl tracking-tight text-gray-900 font-montserrat font-semibold">
+    <div
+      id="contact"
+      className="py-2xl md:py-3xl lg:py-4xl text-center mx-auto"
+    >
+      <h2 className="text-2xl md:text-3xl mb-md md:mb-xl tracking-tight text-gray-900 font-montserrat font-semibold">
         Ready to Accelerate Your Growth?
       </h2>
-      <p className="text-gray-500 text-lg mb-2xl font-montserrat font-medium">
+      <p className="text-gray-500 text-base md:text-lg mb-xl md:mb-2xl font-montserrat font-medium">
         Whether you need a growth strategy or an automated growth system,
         let&apos;s discuss your path to exponential growth.
       </p>

@@ -13,7 +13,7 @@ const tabs: { id: TabType; label: string }[] = [
 
 export default function HelpTabs({ activeTab, onTabChange }: HelpTabsProps) {
   return (
-    <div className="flex justify-center gap-lg mb-4xl flex-wrap">
+    <div className="flex justify-center gap-md md:gap-lg mb-2xl md:mb-3xl lg:mb-4xl flex-wrap">
       {tabs.map((tab) => (
         <button
           key={tab.id}

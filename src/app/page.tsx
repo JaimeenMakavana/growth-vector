@@ -9,7 +9,7 @@ import Footer from "@/components/home-page-components/footer/Footer";
 export default function Home() {
   return (
     <div className="bg-bg-primary text-text-primary antialiased overflow-x-hidden">
-      <main className="max-w-7xl mx-auto pt-32 pr-xl pb-20 pl-xl">
+      <main className="max-w-7xl mx-auto pt-24 md:pt-32 px-md md:px-xl pb-2xl md:pb-20">
         <HeroSection />
         <Carousel />
         <ClientSuccessStories />

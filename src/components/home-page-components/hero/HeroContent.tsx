@@ -4,7 +4,7 @@ export default function HeroContent() {
   return (
     <div className="lg:col-span-7 flex flex-col justify-center">
       {/* Status Badge */}
-      <div className="animate-fade-up delay-100 w-fit inline-flex items-center gap-2.5 bg-white/80 backdrop-blur border border-gray-200 text-gray-600 px-md py-1.5 rounded-full text-xs font-montserrat font-semibold mb-8 shadow-sm hover:border-rose-200 transition-colors duration-base">
+      <div className="animate-fade-up delay-100 w-fit inline-flex items-center gap-2.5 bg-white/80 backdrop-blur border border-gray-200 text-gray-600 px-md py-1.5 rounded-full text-xs font-montserrat font-semibold mb-6 md:mb-8 shadow-sm hover:border-rose-200 transition-colors duration-base">
         <span className="relative flex h-2 w-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
@@ -13,7 +13,7 @@ export default function HeroContent() {
       </div>
 
       {/* Headline */}
-      <h1 className="animate-fade-up delay-200 text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight mb-8 font-medium">
+      <h1 className="animate-fade-up delay-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] leading-[0.95] tracking-tight mb-6 md:mb-8 font-medium">
         <span className="text-gray-900 font-serif">Scaling</span>{" "}
         <span className="text-gray-400 font-sans">Revenue</span>{" "}
         <span className="text-gray-900 font-serif">through</span>{" "}
@@ -24,7 +24,7 @@ export default function HeroContent() {
       </h1>
 
       {/* Description */}
-      <p className="animate-fade-up delay-300 text-lg md:text-xl text-gray-500 leading-relaxed mb-10 font-montserrat font-medium">
+      <p className="animate-fade-up delay-300 text-base md:text-lg lg:text-xl text-gray-500 leading-relaxed mb-8 md:mb-10 font-montserrat font-medium">
         We blend creative strategy with{" "}
         <span className="text-gray-900 font-semibold">AI Automation</span> to
         drive predictable growth. The modern agency for ambitious brands.

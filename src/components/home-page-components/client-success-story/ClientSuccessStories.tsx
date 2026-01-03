@@ -57,8 +57,8 @@ const successStories: SuccessStory[] = [
 
 export default function ClientSuccessStories() {
   return (
-    <div id="work" className="py-4xl">
-      <h2 className="text-4xl md:text-5xl text-center mb-4xl tracking-tight text-gray-900 font-montserrat font-semibold">
+    <div id="work" className="py-2xl md:py-3xl lg:py-4xl">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl text-center mb-2xl md:mb-3xl lg:mb-4xl tracking-tight text-gray-900 font-montserrat font-semibold">
         Client Success Stories
       </h2>
       <div className="flex flex-col gap-xl w-full">

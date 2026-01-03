@@ -50,7 +50,7 @@ export default function HelpTabContent({ activeTab }: HelpTabContentProps) {
       : services.filter((service) => service.category === activeTab || service.category === "all");
 
   return (
-    <div className="grid md:grid-cols-2 gap-2xl">
+    <div className="grid md:grid-cols-2 gap-xl md:gap-2xl">
       {filteredServices.map((service) => (
         <HelpCard key={service.id} service={service} />
       ))}

@@ -31,7 +31,7 @@ export default function Header() {
         <DesktopNav />
 
         <Link
-          href="#contact"
+          href="/book-strategy"
           className="group bg-gray-900 text-background text-sm rounded-full hover:bg-rose-600 hover:shadow-lg transition-all flex items-center font-montserrat font-medium pl-lg pr-lg pt-2.5 pb-2.5 gap-sm duration-base whitespace-nowrap"
         >
           Book Strategy
