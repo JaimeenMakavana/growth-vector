@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <div className="fixed left-0 right-0 top-lg z-fixed pl-md pr-md flex justify-center animate-fade-up z-[100]">
-      <nav className="max-w-6xl w-full glass-nav border border-gray-200 rounded-full flex items-center justify-between shadow-sm hover:shadow-lg transition-all px-xl pt-sm pb-sm gap-2xl duration-base ">
+      <nav className="max-w-6xl w-full glass-nav border border-gray-200 rounded-full flex items-center justify-between shadow-sm hover:shadow-lg transition-all px-xl pt-sm pb-sm gap-xl duration-base ">
         <Link
           href="/"
           className="group flex items-center text-sm text-gray-900 hover:text-rose-600 transition-colors gap-sm duration-base"
