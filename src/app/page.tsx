@@ -1,11 +1,11 @@
-import Header from "@/components/header/Header";
-import HeroSection from "@/components/hero/HeroSection";
-import Carousel from "@/components/carousel/Carousel";
-import ClientSuccessStories from "@/components/client-success-story/ClientSuccessStories";
-import ApproachSection from "@/components/approach/ApproachSection";
-import HelpSection from "@/components/help/HelpSection";
-import ContactSection from "@/components/contact/ContactSection";
-import Footer from "@/components/footer/Footer";
+import Header from "@/components/home-page-components/header/Header";
+import HeroSection from "@/components/home-page-components/hero/HeroSection";
+import Carousel from "@/components/home-page-components/carousel/Carousel";
+import ClientSuccessStories from "@/components/home-page-components/client-success-story/ClientSuccessStories";
+import ApproachSection from "@/components/home-page-components/approach/ApproachSection";
+import HelpSection from "@/components/home-page-components/help/HelpSection";
+import ContactSection from "@/components/home-page-components/contact/ContactSection";
+import Footer from "@/components/home-page-components/footer/Footer";
 
 export default function Home() {
   return (
