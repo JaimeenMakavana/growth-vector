@@ -5,11 +5,10 @@ export default function ApproachSection() {
   return (
     <div
       id="about"
-      className="py-24 grid lg:grid-cols-2 gap-20 items-center"
+      className="py-4xl grid lg:grid-cols-2 gap-20 items-center"
     >
       <ApproachContent />
       <ApproachImages />
     </div>
   );
 }
-

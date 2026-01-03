@@ -25,7 +25,7 @@ const successStories: SuccessStory[] = [
       primary: { value: "+350%", label: "Revenue Growth" },
       secondary: { value: "-45%", label: "Acquisition Cost" },
     },
-    stickyOffset: "top-24",
+    stickyOffset: "",
   },
   {
     id: "luxeretail",
@@ -38,7 +38,7 @@ const successStories: SuccessStory[] = [
       primary: { value: "+280%", label: "Conversion Rate" },
       secondary: { value: "24/7", label: "Automation" },
     },
-    stickyOffset: "top-28",
+    stickyOffset: "",
   },
   {
     id: "financeflow",
@@ -51,17 +51,17 @@ const successStories: SuccessStory[] = [
       primary: { value: "+420%", label: "Qualified Leads" },
       secondary: { value: "Scalable", label: "Growth System" },
     },
-    stickyOffset: "top-32",
+    stickyOffset: "",
   },
 ];
 
 export default function ClientSuccessStories() {
   return (
-    <div id="work" className="py-24">
-      <h2 className="text-4xl md:text-5xl text-center mb-16 tracking-tight text-gray-900 font-montserrat font-semibold">
+    <div id="work" className="py-4xl">
+      <h2 className="text-4xl md:text-5xl text-center mb-4xl tracking-tight text-gray-900 font-montserrat font-semibold">
         Client Success Stories
       </h2>
-      <div className="flex flex-col gap-6 max-w-4xl mx-auto relative">
+      <div className="flex flex-col gap-xl w-full    ">
         {successStories.map((story) => (
           <SuccessStoryCard key={story.id} story={story} />
         ))}
@@ -69,4 +69,3 @@ export default function ClientSuccessStories() {
     </div>
   );
 }
-

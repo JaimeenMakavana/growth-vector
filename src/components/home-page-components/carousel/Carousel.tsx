@@ -11,16 +11,16 @@ const carouselItems = [
 
 export default function Carousel() {
   return (
-    <div className="w-full py-12 mt-8 overflow-hidden marquee-mask relative group">
+    <div className="w-full py-3xl mt-2xl overflow-hidden marquee-mask relative group">
       <div className="flex w-[200%] animate-infinite-scroll hover:[animation-play-state:paused]">
         {/* Logo Set 1 */}
-        <div className="flex items-center justify-around w-1/2 gap-16 px-8">
+        <div className="flex items-center justify-around w-1/2 gap-4xl px-2xl">
           {carouselItems.map((item, index) => (
             <CarouselItem key={`set1-${index}`} {...item} />
           ))}
         </div>
         {/* Logo Set 2 (Duplicate) */}
-        <div className="flex items-center justify-around w-1/2 gap-16 px-8">
+        <div className="flex items-center justify-around w-1/2 gap-4xl px-2xl">
           {carouselItems.map((item, index) => (
             <CarouselItem key={`set2-${index}`} {...item} />
           ))}
@@ -29,4 +29,3 @@ export default function Carousel() {
     </div>
   );
 }
-

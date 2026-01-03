@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import DesktopNav from "./DesktopNav";
 import MobileMenu from "./MobileMenu";
 
@@ -12,49 +14,34 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 animate-fade-up">
-      <nav className="glass-nav border border-gray-200 rounded-full pl-6 pr-2 py-2 flex items-center gap-8 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300">
-        <a
-          href="#"
-          className="group flex items-center gap-2 text-sm text-gray-900 hover:text-rose-600 transition-colors"
+    <div className="fixed left-0 right-0 top-lg z-fixed pl-md pr-md flex justify-center animate-fade-up z-[100]">
+      <nav className="glass-nav border border-gray-200 rounded-full flex items-center shadow-sm hover:shadow-lg transition-all pl-xl pr-sm pt-sm pb-sm gap-2xl duration-base">
+        <Link
+          href="/"
+          className="group flex items-center text-sm text-gray-900 hover:text-rose-600 transition-colors gap-sm duration-base"
         >
           <span className="font-instrument text-2xl tracking-tight font-serif italic font-medium">
             Growth Vector.
           </span>
-        </a>
+        </Link>
 
         <DesktopNav />
 
-        <div className="h-4 w-px bg-gray-200 hidden md:block"></div>
+        <div className="w-px h-md bg-gray-200 hidden md:block"></div>
 
-        <a
+        <Link
           href="#contact"
-          className="group bg-gray-900 text-white text-sm px-5 py-2.5 rounded-full hover:bg-rose-600 hover:shadow-lg hover:shadow-rose-600/30 transition-all duration-300 flex items-center gap-2 font-montserrat font-medium"
+          className="group bg-gray-900 text-background text-sm rounded-full hover:bg-rose-600 hover:shadow-lg transition-all flex items-center font-montserrat font-medium pl-lg pr-lg pt-2.5 pb-2.5 gap-sm duration-base"
         >
           Book Strategy
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+          <ArrowRight
             className="w-4 h-4 transition-transform group-hover:translate-x-1"
-          >
-            <path d="M5 12h14"></path>
-            <path d="m12 5 7 7-7 7"></path>
-          </svg>
-        </a>
+            strokeWidth={1.5}
+          />
+        </Link>
 
-        <MobileMenu
-          isOpen={isMobileMenuOpen}
-          onToggle={toggleMobileMenu}
-        />
+        <MobileMenu isOpen={isMobileMenuOpen} onToggle={toggleMobileMenu} />
       </nav>
     </div>
   );
 }
-
