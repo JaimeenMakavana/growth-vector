@@ -1,4 +1,5 @@
 import { Cpu, Package } from "lucide-react";
+import type { ReactElement } from "react";
 import { TabType } from "./HelpSection";
 import HelpCard from "./HelpCard";
 
@@ -12,7 +13,7 @@ interface Service {
   subtitle: string;
   description: string;
   cta: string;
-  icon: JSX.Element;
+  icon: ReactElement;
   category: TabType;
 }
 

@@ -25,7 +25,7 @@ function validateForm(data: FormData): Record<string, string> | null {
   }
 
   const errors: Record<string, string> = {};
-  result.error.errors.forEach((error) => {
+  result.error.issues.forEach((error) => {
     if (error.path[0]) {
       errors[error.path[0].toString()] = error.message;
     }

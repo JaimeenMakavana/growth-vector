@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import type { ReactElement } from "react";
 
 interface Service {
   id: string;
@@ -6,7 +7,7 @@ interface Service {
   subtitle: string;
   description: string;
   cta: string;
-  icon: JSX.Element;
+  icon: ReactElement;
 }
 
 interface HelpCardProps {
