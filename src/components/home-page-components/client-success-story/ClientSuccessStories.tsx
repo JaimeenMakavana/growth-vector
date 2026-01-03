@@ -61,7 +61,7 @@ export default function ClientSuccessStories() {
       <h2 className="text-4xl md:text-5xl text-center mb-4xl tracking-tight text-gray-900 font-montserrat font-semibold">
         Client Success Stories
       </h2>
-      <div className="flex flex-col gap-xl w-full    ">
+      <div className="flex flex-col gap-xl w-full">
         {successStories.map((story) => (
           <SuccessStoryCard key={story.id} story={story} />
         ))}

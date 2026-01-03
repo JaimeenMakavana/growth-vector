@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/home-page-components/header/Header";
 
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${instrumentSerif.variable} ${inter.variable} ${montserrat.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>

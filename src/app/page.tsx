@@ -1,4 +1,3 @@
-import Header from "@/components/home-page-components/header/Header";
 import HeroSection from "@/components/home-page-components/hero/HeroSection";
 import Carousel from "@/components/home-page-components/carousel/Carousel";
 import ClientSuccessStories from "@/components/home-page-components/client-success-story/ClientSuccessStories";
@@ -10,8 +9,6 @@ import Footer from "@/components/home-page-components/footer/Footer";
 export default function Home() {
   return (
     <div className="bg-bg-primary text-text-primary antialiased overflow-x-hidden">
-      <Header />
-
       <main className="max-w-7xl mx-auto pt-32 pr-xl pb-20 pl-xl">
         <HeroSection />
         <Carousel />
